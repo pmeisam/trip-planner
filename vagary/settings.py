@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'triplaner.wsgi.application'
+WSGI_APPLICATION = 'vagary.wsgi.application'
 
 
 # Database
