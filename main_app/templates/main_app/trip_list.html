@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body%}
+<body>
+{% endblock %}
+{% block content %}
+<h2 class="card-header text-center special-header title">My Trips</h2>
+{% for trip in trip_list %}
+    {%if trip.flight_set.first%}
+    <div class="card col-6 offset-3">
+        <div class="card-body">
+            <div class = 'row'>
+                <div class = 'col-4 text-center'>
+                    <h3><span>Name</span></h3>
+                    <h2>{{trip.name}}</h2>
+                </div>
+                <div class = 'col-4 text-center'>
+                    <h3><span>Budget</span></h3>
+                    <h2>${{trip.budget}}</h2>
+                </div>
+                <div class = 'col-4 text-center'>
+                    <h3><span>Destination</span></h3>
+                    <h2>{{trip.flight_set.first.destination}}</h2>
+                </div>
+            </div>
+            <br><br>
+            <div class = 'row'>
+                <a href="/trips/{{trip.id}}/{{trip.origin}}" class="btn btn-outline-success add col-12">Check It Out</a>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% endfor %}
+
+{% endblock %}

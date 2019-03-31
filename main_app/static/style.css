@@ -1,0 +1,183 @@
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    background-color: rgb(59, 245, 165);
+    color: white;
+    /* height: 40px; */
+    /* position: absolute; */
+    position: fixed;
+}
+body {
+    height: 100%;
+}
+.title {
+    font-family: 'Indie Flower', cursive;
+}
+.navbar {
+    background-color: rgb(59,245,165);
+    color: white;
+}
+body {
+    background-color: rgb(242,242,242);
+}
+.box {
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    margin: 14% auto 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: solid 1px rgb(59,245,165);
+}
+.input-group-text {
+    background-color: rgb(59,245,165);
+    color: white;
+    border: solid 1px rgb(59,245,165);
+}
+.btn-outline-success {
+    border: solid 1px rgb(39,185,122);
+    color: rgb(39,185,122);
+}
+.btn-outline-success:hover {
+    border: solid 1px rgb(39,185,122);
+    background-color: rgb(39,185,122);
+    color: white;
+}
+.btn-outline-dark{
+    width: 250px;
+    margin: 20px 0;
+}
+#id_item_name {
+    border: solid 1px darkgray;
+    border-radius: 5px;
+}
+#id_quantity {
+    border: solid 1px darkgray;
+    border-radius: 5px;
+    width: 50px;
+}
+
+/* 
+.home-footer {
+    position: fixed;
+}
+
+body {
+    font-family: 'Sniglet', cursive;
+}
+
+.bg-image {
+    background-image: url('globe.jpeg');
+    background-position: center;
+    height: 100vh;
+}
+
+.larger-font {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    padding: 20px;
+    font-size: 100px;
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px; 
+}
+
+.btn {
+    border: 2px solid black;
+}
+
+.btn-primary {
+    background-color: #3b7e91;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #4076A9;
+}
+.card {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border: 5px solid black;
+}
+
+.col-4 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.trip-header {
+    font-size: 60px;
+}
+
+h4 {
+    background-color: #4076A9;
+    color: white;
+    padding: 5px;
+}
+
+h5 {
+    margin-bottom: 15px;
+}
+
+.card-header {
+    background-color: #b4d6df;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+
+.search-header {
+    padding:  0px;
+}
+
+span {
+    background-color: #a6abb0;
+    color: white;
+    padding: 5px;
+}
+
+.add {
+    font-size: 20px;
+    background-color: #b4d6df;
+}
+
+.search {
+    background-color: #b4d6df;
+    padding: 0px;
+}
+
+.special-header {
+    font-family: 'Pacifico', cursive;
+}
+
+.col-3, .col-5 {
+    margin: 10px;
+    border: none;
+}
+
+.col-5 {
+    border: 1px black solid;
+}
+
+.packing {
+    padding: 0px;
+}
+
+.plus-minus {
+    border-radius: 50%;
+    margin: 1px;
+    padding: 0px 5px;
+} */

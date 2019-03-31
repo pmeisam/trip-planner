@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body%}
+<body>
+{% endblock %}
+
+{% block content %}
+{%for i in iata%}
+    {%if i.code == airport_code %}
+        <h2 class="card-header special-header larger-font text-center">Hotels in {{i.name}}</h2>
+    {%endif%}
+{%endfor%}
+{% for h in hotels %}
+<div class="card col-6 offset-3">
+    <div class="card-body">
+        <h4 class = "col-12 text-center">{{h.hotel.name}}</h4>
+        <h5> <span> Price</span> ${{h.offers.0.price.total}} / per night</h5>    
+    
+    <form action="/{{trip.id}}/{{airport_code}}/hotels/add/" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="name" value = "{{h.hotel.name}}">
+        <input type="hidden" name="check_in" value = "{{h.offers.0.changes.price.0.startDate}}">
+        <input type="hidden" name="check_out" value = "{{h.offers.0.changes.price.0.endDate}}">
+        <input type="hidden" name="street" value = "{{h.hotel.address.lines.0}}">
+        <input type="hidden" name="zipcode" value = "{{h.hotel.address.postalCode}}">
+        <input type="hidden" name="city" value = "{{h.hotel.address.cityName}}">
+        <input type="hidden" name="price" value = "{{h.offers.0.price.total}}">
+        <input type="hidden" name="trip" value="{{trip.id}}">
+        <input type="submit" value="ADD TO TRIP" class="btn btn-outline-success pull-right add col-12">
+    </form>  
+</div>
+</div>
+
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+    <div class="home-footer card-footer text-muted">
+{% endblock %}

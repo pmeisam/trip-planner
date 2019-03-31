@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<br><br>
+{% block body%}
+<body class = "bg-image">
+{% endblock %}
+
+{% block content %}
+<div class = "card col-6 offset-3">
+    <br>
+    <h2 class = "text-center special-header">Whoops!</h2>
+    <br>
+    <p>Sadly that airport isn't available yet. Please try a different departure airport!</p>
+    <h3 class = "text-center">Happy Travels!</h3>
+<a href = "/" class = "btn btn-light">Try Again</a>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+    <div class=" home-footer card-footer text-muted">
+{% endblock %}
