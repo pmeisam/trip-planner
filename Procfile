@@ -1,1 +1,1 @@
-web: gunicorn vagary.wsgi
+web: gunicorn triplaner.wsgi
