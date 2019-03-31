@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vagary.wsgi.application'
+WSGI_APPLICATION = 'triplaner.wsgi.application'
 
 
 # Database
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'vagary.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vagary',
+        'NAME': 'triplaner',
     }
 }
 
